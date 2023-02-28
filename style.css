@@ -1,0 +1,176 @@
+*{
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:4vh;
+    background-color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+header{
+    display: flex;
+    color: white;
+    position: relative;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    padding: 0vh;
+    margin: 1vh;
+    border: 1vh;
+    height: 8vh;
+    width: 90%;
+}
+
+.global-caltos{
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center; 
+    background-color: #673F27;
+    width: 40vh;
+    border-radius: 10vh;
+    padding: 4vh;
+    margin: 1vh;
+    border: 0.5vh solid #32313b8a;
+    gap: 2vh;
+    background: -moz-linear-gradient(150deg, #166e7a 10%, #254d70 90%, #252446 100%);
+    background:-webkit-linear-gradient(150deg, #5fa1e7 10%, #5f6ee7 90%, #4c60aa 100%);
+    background:linear-gradient(150deg, #5fa1e7 10%, #5f6ee7 90%, #4c60aa 100%);
+}
+
+.caltos-screen{
+    display: flex;
+    position:relative;
+    background-color: #32313b;
+    justify-content: center;
+    align-items: center;
+    padding: inherit;
+    width:inherit - padding;
+    height: 18vh;
+    border-radius: 2em;
+    margin-top: 4vh;
+    background: -moz-linear-gradient(150deg, #463c5e 5%,#32313b 100%);
+    background:-webkit-linear-gradient(150deg, #463c5e 5%,#32313b 100%);
+    background:linear-gradient(150deg, #463c5e 5%,#32313b 100%);
+}
+
+.caltos-result{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #ffffff;
+    background-color: #f3a787a9;
+    padding: 1vh;
+    border: 0.25vh;
+    border-color: #32313b;
+    border-style:solid;
+    border-radius: 1em;
+    height: 17vh;
+    width: 30vh;
+    box-shadow: inset 0 0 2em #32313b;
+    overflow: hidden;  
+
+}
+
+#calcul, #result{
+    margin: 1vh;
+    text-shadow: #32313b 0px 0px 1vh;
+
+
+}
+#calcul{
+    text-align: left;
+    font-size: 3vh;
+    visibility: hidden;
+    flex-wrap: wrap;
+}
+#result{
+    text-align: right;
+    font-size: 4vh;  
+}
+
+/* BOUTONS */
+
+.caltos-bouton{
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    margin: 1vh;
+    width: 40vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.column-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+button{
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #4c60aa;
+    padding: 2.5vh;
+    margin: 1vh;
+    border: 0.25vh;
+    width: 1.5vh;
+    height: 2vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    border-color: #32313b;    
+    border-style:solid;
+    box-shadow: 0 0.125em 0.25em #32313b;
+    font-size: 2vh;
+}
+
+.equal, .del, .clear{
+    background-color: #855395;
+}
+.plus{
+    background-color: #4593a5;
+    flex-grow: 1;
+}
+.operator{
+    background-color: #4593a5;
+}
+
+button:hover{
+    background-color: #5fa1e7;    
+    cursor: pointer;
+    transition: .4s background-color;
+    -webkit-transition: .4s background-color;
+    -moz-transition: .4s background-color;
+}
+.equal:hover, .del:hover, .clear:hover{
+    background-color: #ca60ae;
+    cursor: pointer;
+    transition: .4s background-color;
+    -webkit-transition: .4s background-color;
+    -moz-transition: .4s background-color;
+}
+.operator:hover, .plus:hover{
+    background-color: #5dc190;
+    cursor: pointer;
+    transition: .4s background-color;
+    -webkit-transition: .4s background-color;
+    -moz-transition: .4s background-color;
+}
